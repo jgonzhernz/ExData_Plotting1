@@ -1,4 +1,5 @@
 ## Plot1
+
 ## Set repository as working dir
 setwd("~/ExData_Plotting1")
 
@@ -18,15 +19,15 @@ data$Date <- strptime(data$Date, "%d/%m/%Y")
 date1 <- strptime("01-02-2007", "%d-%m-%Y")
 date2 <- strptime("02-02-2007", "%d-%m-%Y")
 
-## Subset data between dates
-data2 <- subset(data, as.Date(Date) >= as.Date(date1) & 
+## Subset data between dates. Overwrite original data frame
+data <- subset(data, as.Date(Date) >= as.Date(date1) & 
                   as.Date(Date) <= as.Date(date2))
 
 ## Open the graphics file device for PNG
 png("plot1.png", height=480, width=480)
 
-## Make the plot
-hist(data2$Global_active_power, col="red", 
+## Make the histo.
+hist(data$Global_active_power, col="red", 
      xlab = "Global Active Power (kilowatts)",
      main = "Global Active Power")
 
