@@ -1,0 +1,4 @@
+# Se ignoran los siguientes archivos de Rstudio
+
+.Rhistory
+.RData

@@ -1,5 +1,5 @@
 ## Plot3
-## code of the plot only change.
+## 
 ## Names of days are in spanish, the language of my windows license.
 
 ## Set repository as working dir
@@ -35,11 +35,11 @@ png("plot3.png", height=480, width=480)
 ## You need init. xlab explicitly if you want nothing in the label 
 plot(data$posixDate, data$Sub_metering_1, pch=NA, xlab="",
      ylab="Energy sub metering")
-## add the lines
+## Add the lines
 lines(data$posixDate, data$Sub_metering_1)
 lines(data$posixDate, data$Sub_metering_2, col="red")
 lines(data$posixDate, data$Sub_metering_3, col="blue")
-## add the legend
+## Add the legend
 legend('topright', c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        lty=c(1,1,1), col=c("black", "red", "blue"))
 

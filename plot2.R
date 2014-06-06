@@ -34,7 +34,7 @@ png("plot2.png", height=480, width=480)
 ## You need init. xlab explicitly if you want nothing in the label 
 plot(data$posixDate, data$Global_active_power, pch=NA, xlab="",
      ylab="Global Active Power (kilowatts)")
-## add the line
+## Add the line
 lines(data$posixDate, data$Global_active_power)
 
 ## Close the graphics file device
