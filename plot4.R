@@ -55,7 +55,7 @@ plot(data$posixDate, data$Sub_metering_1, pch=NA, xlab="",
 lines(data$posixDate, data$Sub_metering_1)
 lines(data$posixDate, data$Sub_metering_2, col="red")
 lines(data$posixDate, data$Sub_metering_3, col="blue")
-## Add the legend
+## Add the legend. With bty="n" for removing box.
 legend('topright', c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        lty=c(1,1,1), bty="n", col=c("black", "red", "blue"))
 
